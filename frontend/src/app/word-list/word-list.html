@@ -1,0 +1,14 @@
+<div>
+  <h2>All words</h2>
+
+  <table>
+    <tr>
+      <th>Original</th>
+      <th>Translation</th>
+    </tr>
+    <tr *ngFor="let word of words">
+      <td>{{ word.original }}</td>
+      <td>{{ word.translation }}</td>
+    </tr>
+  </table>
+</div>

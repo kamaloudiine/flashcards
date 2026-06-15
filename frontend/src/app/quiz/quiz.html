@@ -1,0 +1,12 @@
+<div>
+  <h2>Quiz</h2>
+
+  <div *ngIf="currentWord">
+    <p>{{ currentWord.original }}</p>
+    <button (click)="reveal()">Reveal</button>
+    <p *ngIf="revealed">{{ currentWord.translation }}</p>
+    <button (click)="next()">Next word</button>
+  </div>
+
+  <button (click)="next()">Start</button>
+</div>

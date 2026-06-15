@@ -1,0 +1,9 @@
+<div>
+  <h2>Add a new word</h2>
+
+  <input [(ngModel)]="original" placeholder="Word in your language" />
+  <input [(ngModel)]="translation" placeholder="Translation" />
+  <button (click)="addWord()">Save</button>
+
+  <p *ngIf="message">{{ message }}</p>
+</div>
